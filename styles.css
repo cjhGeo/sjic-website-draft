@@ -1,0 +1,811 @@
+.konkhmer-sleokchher-regular {
+  font-family: "Konkhmer Sleokchher", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gowun-batang-regular {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
+  font-family: "Konkhmer Sleokchher", system-ui;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #050A30, #113E4A, #000);
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
+
+.logo {
+  height: 45px;
+  color: #000;
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header span {
+  color: #000;
+  font-family: "Konkhmer Sleokchher", system-ui;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: black;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  color: #ffb703;
+}
+
+/* Home Page */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero div {
+  position: relative;
+}
+
+.hero div img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  /* position: absolute; */
+  opacity: 0.7;
+}
+
+.hero div h1 {
+  position: absolute;
+  bottom: 0;
+  font-size: 5rem;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.hero div h1 span {
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Gowun Batang", serif;
+}
+
+.countdowncaption {
+  font-family: "Gowun Batang", serif;
+  font-size: 1.7rem;
+  /* margin: 10px; */
+  text-align: center;
+}
+
+.countdown {
+  position: relative;
+  margin-top: 20px;
+}
+
+#stripe1, #stripe2 {
+  position: absolute;
+  height: calc(100% + 20px);
+  width: calc(50% + 2rem);
+  z-index: -1;
+}
+
+#stripe1 {
+  bottom: 0;
+  right: calc(50%);
+}
+
+#stripe2 {
+  top: 0;
+  left: calc(50%);
+}
+
+#lightbulb {
+  max-height: 100px;
+  transform: rotate(17.88deg);
+  position: absolute;
+  top: -20px;
+  right: calc(50% - 365px);
+}
+
+.gear {
+  position: absolute;
+}
+
+#gear1 {
+  max-height: 110px;
+  bottom: -40px;
+  left: calc(50% - 375px);
+}
+
+#gear2 {
+  max-height: 90px;
+  bottom: 54px;
+  left: calc(50% - 382px);
+}
+
+#gear3 {
+  max-height: 63px;
+  bottom: 17px;
+  left: calc(50% - 418px);
+}
+
+.countdownContainer {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.countdownContainerbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #1F2835;
+  border-radius: 10px;
+  z-index: -2;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+
+.digits {
+  padding: 1rem;
+}
+
+.timer .divider {
+  /* display: none; */
+  width: 1px;
+  padding: none;
+  background-color: #fff;
+}
+
+.specifics {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contact {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact a {
+  color: #4fc3f7;
+}
+
+/* About Page */
+h1 {
+  font-size: 5rem;
+  margin-top: 0;
+  color: #ffb703;
+}
+
+.about p {
+  max-width: 800px;
+  font-size: 1.75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.photos-filmstrip {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  height: 100%;
+}
+
+.photos-filmstrip img {
+  max-width: 60%;
+  position: absolute;
+  top: 0;
+}
+
+#filmstrip1 {
+  left: -2rem;
+}
+
+#filmstrip2 {
+  right: -2rem;
+}
+
+.about-sjic {
+  margin-top: calc(0.53 * (65vw));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h2 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.about-sjic .desc {
+  font-size: 1.4rem;
+  margin: 10px;
+}
+
+.desc-container {
+  text-align: center;
+  max-width: 900px;
+  font-weight: 600;
+}
+
+.why-sjic {
+  margin-top: 75px;
+}
+
+.why-sjic .reasons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.why-sjic .reasons div {
+  margin: 1rem;
+}
+
+.why-sjic img {
+  max-height: 250px;
+}
+
+.reviews {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews div {
+  max-width: 850px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-areas:
+  "title title"
+  "img desc";
+  gap: 20px;
+}
+
+.reviews h3 {
+  grid-area: title;
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+.reviews img {
+  grid-area: img;
+  max-height: 150px;
+  background-color: #fff;
+}
+
+.reviews p {
+  grid-area: desc;
+  text-align: start;
+  font-size: 1.7rem;
+}
+
+/* Details Page */
+.timeline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#timelinecontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.timelinething {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  height: 300px;
+  max-width: 220px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #828a9b;
+  border-radius: 5px;
+  color: black;
+}
+
+.timelinething img {
+  max-height: 50%;
+  width: 100%;
+  max-width: fit-content;
+  object-fit: cover;
+  margin: 0;
+}
+
+.timelinethingtext {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timelinething h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.timelinething p {
+  margin: 0;
+  width: 80%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule h2 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 901px) {
+  .scheduleline {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-rows: 1fr 30px 1fr;
+    grid-template-areas:
+    "event1 . event3 . event5"
+    "bigline bigline bigline bigline bigline"
+    ". event2 . event4 .";
+    margin: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .bigline {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    grid-area: bigline;
+  }
+
+  .event {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .event h3 {
+    margin: 0;
+  }
+
+  #event1, #event3, #event5 {
+    align-self: end;
+    margin-bottom: 27px;
+  }
+
+  #event2, #event4 {
+    align-self: start;
+    margin-top: 27px;
+  }
+
+  #event1 {
+    grid-area: event1;
+    margin-left: -20px;
+    margin-right: 20px;
+  }
+
+  #event2 {
+    grid-area: event2;
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+
+  #event3 {
+    grid-area: event3;
+  }
+
+  #event4 {
+    grid-area: event4;
+    margin-left: 10px;
+    margin-right: -10px;
+  }
+
+  #event5 {
+    grid-area: event5;
+    margin-left: 20px;
+    margin-right: -20px;
+  }
+
+  .connectingline {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    bottom: 0;
+    left: calc(50% - 2px);
+    background-color: #D9D9D9;
+    border-radius: 1.5px;
+  }
+
+  #cl1, #cl3, #cl5 {
+    bottom: -27px;
+  }
+
+  #cl2, #cl4 {
+    top: -27px;
+  }
+}
+
+/* .schedule table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 2rem;
+  margin-bottom: 3rem;
+}
+
+.schedule th, .schedule td {
+  border: 1px solid white;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.schedule th {
+  font-size: 1.7rem;
+} */
+
+.competition, .prizes {
+  margin-top: 2rem;
+}
+
+.competition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.competition p {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.competition strong {
+  font-weight: 700;
+}
+
+.prizes ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.prizes li {
+  margin: 0.5rem 0;
+}
+
+/* @media (min-width: 1400px) {
+  #stripe1, #stripe2 {
+    width: calc(50% + 100px + 2rem);
+  }
+  
+  #stripe1 {
+    bottom: 0;
+    right: calc(50% - 100px);
+  }
+  
+  #stripe2 {
+    top: 0;
+    left: calc(50% -100px);
+  }
+}
+
+@media (min-width: 1750px) {
+  #stripe1, #stripe2 {
+    display: none;
+  }
+} */
+
+@media (max-width: 1260px) and (min-width: 1112px) {
+  #timelinecontainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .timelinething {
+    flex-direction: row;
+    height: 200px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .timelinething img {
+  max-height: 80%;
+}
+
+  .timelinethingtext {
+    width: calc(100% - 190px);
+    margin-left: 30px;
+    align-items: start;
+  }
+
+  .timelinething h3 {
+    margin-top: 0;
+  }
+
+  .timelinething p {
+    text-align: start;
+  }
+
+  .tltl {
+    justify-self: end;
+  }
+
+  .tltr {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 1111px) and (min-width: 721px) {
+  #timelinecontainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .tltl {
+    justify-self: end;
+  }
+
+  .tltr {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 720px) {
+  #timelinecontainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  #lightbulb, .gear {
+    display: none;
+  }
+
+  .scheduleline {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-rows: repeat(1fr, 5);
+    grid-template-areas:
+    ". bigline ."
+    ". bigline ."
+    ". bigline ."
+    ". bigline ."
+    ". bigline .";
+    margin: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .bigline {
+    width: 30px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    grid-area: bigline;
+  }
+
+  .event {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .event h3 {
+    margin: 0;
+  }
+
+  #event1, #event3, #event5 {
+    justify-self: end;
+    margin-right: 40px;
+    grid-column: 1;
+  }
+
+  #event2, #event4 {
+    justify-self: start;
+    margin-left: 40px;
+    grid-column: 3
+  }
+
+  #event1 {
+    grid-row: 1;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  #event2 {
+    grid-row: 2;
+    margin-top: -10px;
+    margin-right: 10px;
+  }
+
+  #event3 {
+    grid-row: 3;
+  }
+
+  #event4 {
+    grid-row: 4;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  #event5 {
+    grid-row: 5;
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+
+  .connectingline {
+    position: absolute;
+    height: 5px;
+    width: 25px;
+    bottom: 0;
+    top: calc(50% - 2.5px);
+    background-color: #D9D9D9;
+    border-radius: 2.5px;
+  }
+
+  #cl1, #cl3, #cl5 {
+    right: -40px;
+  }
+
+  #cl2, #cl4 {
+    left: -40px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  header div span {
+    display: none;
+  }
+
+  .hero div h1 {
+    font-size: 3rem;
+    margin-left: 7px;
+  }
+  
+  .hero div h1 span {
+    font-size: 2.3rem;
+  }
+
+
+
+  #stripe1, #stripe2{
+    display: none
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .specifics {
+    margin-bottom: 25px;
+  }
+
+
+
+  .why-sjic .reasons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .timer {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
