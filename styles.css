@@ -1,25 +1,27 @@
 .konkhmer-sleokchher-regular {
   font-family: "Konkhmer Sleokchher", system-ui;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-style: normal;
 }
 
 .gowun-batang-regular {
   font-family: "Gowun Batang", serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-style: normal;
 }
 
 
 * {
   font-family: "Konkhmer Sleokchher", system-ui;
+  /* font-weight: 500; */
 }
 
 /* General Styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #050A30, #113E4A, #000);
+  /* background: linear-gradient(to bottom, #050A30, #113E4A, #000); */
+  background-color: #fff;
   color: white;
   line-height: 1.6;
 }
@@ -28,13 +30,23 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 120px;
   background-color: #fff;
+  border-bottom: 1.5px solid #ccc;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .logo {
-  height: 45px;
   color: #000;
+}
+
+.prismlogo {
+  height: 84px;
+}
+
+.sjilogo {
+  height: 67px;
 }
 
 header div {
@@ -47,13 +59,15 @@ header span {
   color: #000;
   font-family: "Konkhmer Sleokchher", system-ui;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 nav a {
   color: black;
   margin-left: 2rem;
   text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
   font-weight: bold;
 }
 
@@ -68,6 +82,7 @@ main {
 h1, h2 {
   text-align: center;
   margin-bottom: 1rem;
+  color: #000;
 }
 
 h1 span {
@@ -81,6 +96,7 @@ h1 span {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: 0.5rem;
 }
 
 .hero div {
@@ -93,14 +109,16 @@ h1 span {
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
+  filter: drop-shadow(0 0 5px #888);
   /* position: absolute; */
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .hero div h1 {
   position: absolute;
   bottom: 0;
-  font-size: 5rem;
+  font-size: 6rem;
+  color: #fff;
   margin-bottom: 5px;
   margin-left: 15px;
 }
@@ -112,16 +130,22 @@ h1 span {
   font-family: "Gowun Batang", serif;
 }
 
+.home h2 {
+  margin: 0;
+}
+
 .countdowncaption {
-  font-family: "Gowun Batang", serif;
-  font-size: 1.7rem;
-  /* margin: 10px; */
+  font-size: 1.8rem;
+  font-weight: 700;
   text-align: center;
+  color: #000;
+  margin-top: 10px;
 }
 
 .countdown {
   position: relative;
-  margin-top: 20px;
+  margin-top: 0;
+  filter: drop-shadow(10px 10px 5px #888);
 }
 
 #stripe1, #stripe2 {
@@ -151,6 +175,7 @@ h1 span {
 
 .gear {
   position: absolute;
+  opacity: 1;
 }
 
 #gear1 {
@@ -186,7 +211,7 @@ h1 span {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #1F2835;
+  background-color: #2D3142;
   border-radius: 10px;
   z-index: -2;
 }
@@ -233,22 +258,35 @@ button {
   text-align: center;
 }
 
-.contact a {
-  color: #4fc3f7;
+.contact {
+  margin: 80px 0 auto;
+}
+
+.contact a img {
+  height: 30px;
+  margin: 0 5px;
 }
 
 /* About Page */
-h1 {
+.about h1 {
   font-size: 5rem;
-  margin-top: 0;
-  color: #ffb703;
+  color: #000;
+  margin: 0;
+}
+
+.about h1 span {
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Gowun Batang", serif;
 }
 
 .about p {
   max-width: 800px;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
+  color: #000;
 }
 
 .photos-filmstrip {
@@ -279,16 +317,20 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 100%;
+  color: #000;
 }
 
 h2 {
   font-size: 3rem;
-  text-decoration: underline;
 }
 
 .about-sjic .desc {
   font-size: 1.4rem;
   margin: 10px;
+}
+
+.desc {
+  font-weight: 400;
 }
 
 .desc-container {
@@ -325,33 +367,41 @@ h2 {
   justify-content: center;
 }
 
-.reviews div {
+.reveiws div {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.review {
   max-width: 850px;
-  margin: 20px;
+  margin: 35px 20px;
   display: grid;
   grid-template-columns: 150px 1fr;
   grid-template-areas:
   "title title"
   "img desc";
   gap: 20px;
+  background: #fefefe;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 5px #bdbdbd);
 }
 
 .reviews h3 {
   grid-area: title;
   font-size: 2.3rem;
   margin: 0;
+  color: #000;
 }
 
 .reviews img {
   grid-area: img;
-  max-height: 150px;
-  background-color: #fff;
+  max-height: 130px;
 }
 
 .reviews p {
   grid-area: desc;
   text-align: start;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 /* Details Page */
