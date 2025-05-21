@@ -369,22 +369,26 @@ h2 {
 
 .reveiws div {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
-.review {
-  max-width: 850px;
-  margin: 35px 20px;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  grid-template-areas:
-  "title title"
-  "img desc";
-  gap: 20px;
-  background: #fefefe;
-  border-radius: 20px;
-  filter: drop-shadow(0 0 5px #bdbdbd);
+@media (min-width: 971px) {
+  .review {
+    max-width: 850px;
+    margin: 35px 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas:
+    "img desc";
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #fefefe;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px #bdbdbd);
+  }  
 }
+
 
 .reviews h3 {
   grid-area: title;
@@ -396,6 +400,7 @@ h2 {
 .reviews img {
   grid-area: img;
   max-height: 130px;
+  padding: 1rem;
 }
 
 .reviews p {
@@ -708,6 +713,33 @@ h2 {
   }
 }
 
+@media (max-width: 970px) {
+  .review {
+    max-width: 850px;
+    margin: 35px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "img"
+    "desc";
+    gap: 20px;
+    background: #fefefe;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px #bdbdbd);
+  }
+  
+  .review img, .review p {
+    justify-self: center;
+    align-self: center;
+    padding: 1rem 1rem;
+    padding-top: 0;
+  }
+
+  .review p {
+    max-width: 250px;
+  }
+}
+
 @media (max-width: 900px) {
   #lightbulb, .gear {
     display: none;
@@ -807,6 +839,13 @@ h2 {
 
   #cl2, #cl4 {
     left: -40px;
+  }
+}
+
+@media (max-width: 850px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
